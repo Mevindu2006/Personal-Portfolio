@@ -12,4 +12,32 @@ body{
 a{
     text-decoration: none;
     color: var(--link-color);
+
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#right{
+    display: flex;
+    justify-content: right;
+    margin-top: 0px;
+}
+
+#left{
+    display: flex;
+    justify-content: left;
+    
+}
+
+.link,.link1{
+    margin-left: 10px;
+}
+
+#logo{
+    width: 120px;
+    height: auto;
 }
