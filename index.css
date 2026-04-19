@@ -3,6 +3,7 @@
     --link-color: #408A71;
     --text-color: #B0E4CC;
     --secondary-color: #285A48;
+    --decoration-color: #D8EFE4;
 }
 
 body{
@@ -23,21 +24,49 @@ header{
 
 #right{
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     margin-top: 0px;
+    margin-right: 2em;
+    border: 1px solid;
+    border-color: var(--decoration-color);
+    padding: 10px;
 }
 
 #left{
     display: flex;
-    justify-content: left;
-    
+    justify-content: flex-start;
 }
 
 .link,.link1{
-    margin-left: 10px;
+    margin-left: 1em;
+    background-color: var(--background-color);
+    color: var(--link-color);
+    border-radius: 10px;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.link:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--decoration-color),
+                0 0 20px #ff4d4d,
+                0 0 40px  var(--decoration-color);
+
+    transform: scale(1.05);
+}
+.link1:hover {
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 10px var(--decoration-color),
+                0 0 20px #ff4d4d,
+                0 0 40px  var(--decoration-color);
+
+    transform: scale(1.05);
+    
 }
 
 #logo{
-    width: 120px;
+    width: 80px;
     height: auto;
 }
