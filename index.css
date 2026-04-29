@@ -189,17 +189,6 @@ section{
     animation: glow 1.5s infinite alternate;
 }
 
-@keyframes glow {
-    from {
-        box-shadow: 0 0 10px #6cff52;
-    }
-    to {
-        box-shadow: 0 0 30px #6cff52,
-                    0 0 15px #6cff52, 
-                    0 0 60px #6cff52;
-    }
-}
-
 .about{
     display: flex;
     align-items: center;
@@ -242,3 +231,85 @@ section{
     color: var(--background);
 }
 
+
+.skills{
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+#line{
+    background-color: #3ec5ff;
+    align-items: center;
+    height: 35rem;
+    width: 0.4rem;
+    margin: 1rem;
+}
+
+.programming-left{
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.web-left{
+    margin-top: 17rem;
+    margin-right: -18.4rem;
+    text-align: right;
+}
+
+.tool-right{
+    margin-top: 10rem;
+    text-align: left;
+}
+
+.other-right{
+    margin-left: -15.7rem;
+    margin-top: 26rem;
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #6cff52;
+    }
+    to {
+        box-shadow: 0 0 30px #6cff52,
+                    0 0 15px #6cff52, 
+                    0 0 60px #6cff52;
+    }
+}
