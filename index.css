@@ -31,10 +31,22 @@ nav{
     z-index: 1000;
 }
 
-ul{
+nav ul{
     display: flex;
     align-items: center;
     gap: 3em;
+}
+
+.link:hover{
+    padding: 0.5em 1em;
+    color: #FFD700;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    
+    border: 1px solid #D4AF37;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 nav ul a{
@@ -75,6 +87,8 @@ nav ul a:hover{
     background-color: white;
     color: var(--background);
 }
+
+
 
 span{
     background: linear-gradient(to right, #6cff52, #3ec5ff);
@@ -134,7 +148,7 @@ section{
     font-weight: 400;
 }
 
-info-box p{
+.info-box p{
     opacity: 0.7;
 }
 
@@ -163,43 +177,68 @@ info-box p{
     background: linear-gradient(to bottom, #6cff52, #3ec5ff);
 }
 
-.about{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10rem;
-    background: var(--second-background);
-}
-
 .about-img img{
     width: 32vw;
-    border: 50%;
+    border-radius: 50%;
     box-shadow: 0 0 25px #6cff52;
     transition: 0.5s ease-in-out
 }
 
 .about-img img:hover{
-    box-shadow: 0 0 25px #6cff52
-                0 0 25px #6cff52
-                0 0 25px #6cff52;
+    border-radius: 50%;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        box-shadow: 0 0 10px #6cff52;
+    }
+    to {
+        box-shadow: 0 0 30px #6cff52,
+                    0 0 15px #6cff52, 
+                    0 0 60px #6cff52;
+    }
+}
+
+.about{
+    display: flex;
+    align-items: center;
+    gap: 10rem;
+    background: var(--second-background);
 }
 
 .about-content h2{
     color: white;
-    font-size: 7rem;
+    font-size: 5rem;
     text-align: left;
-
 }
 
 .about-content p{
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
 }
 
 .about-content .btn{
     color: white;
     margin: 3rem 0;
 
+}
+
+#readMe{
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    width: 8.5rem;
+    letter-spacing: 2px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#readMe:hover{
+    background-color: white;
+    color: var(--background);
 }
 
